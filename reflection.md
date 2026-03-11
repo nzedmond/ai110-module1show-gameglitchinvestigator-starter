@@ -7,7 +7,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
-
+**1. The New Game button isn't working: The game was supposed to reset when the button is pressed, but it just stays in its current state**
+**2. Hints don't match the expectation: Hints seem to be alternating between Go Higher and Go Lower despite whether the input is higher or lower than the secret number**
+**3. The score keeps decrementing into the negatives: the score was supposed to stay at zero and increment when the player guesses the number, since the game is based on the number of trials given to the player, not how many times they quessed the right number**
 ---
 
 ## 2. How did you use AI as a teammate?
