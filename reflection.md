@@ -18,14 +18,21 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+**I used CLaude AI. Claude pointed out that New Game doesn't reset status. The new_game blocks resets attempts and secret, but never resets st.session_state.status. I read over the lines Claude said had errors and it's right.**
+
+****
+
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+**I rerun the code multiple times after fixing the bug. First I run the test_game_logic.py with pytest, after all the tests passed, I run the gaem to see if the updates are reflected on it.**
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+  **I run the check_guess function and it turned out, the only output needed were the words, "win", "Too High", and "Too Low." But the code was adding extra details such as "Go Lower/Higher" and "Great".**
 - Did AI help you design or understand any tests? How?
+**Yes. The error on decrementing/incrementing score was a little bit confusing, and Claude helped me understand the logic behind it as well as designing the tests for it.**
 
 ---
 
